@@ -34,6 +34,8 @@ html {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   color: black;
   font-weight: bolder;
   font-size: 3rem;
