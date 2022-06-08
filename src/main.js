@@ -117,7 +117,7 @@ const renderizarFooter = () => {
   $btnComprar.addEventListener("click", (e) => {
     const okCompra = confirm("Confirma Compra?");
     if (okCompra) {
-      alert("Gracias! Por su compra");
+      swal("Muchas gracias", "por tu compra!", "success");
       vaciarCarrito();
     }
   });
