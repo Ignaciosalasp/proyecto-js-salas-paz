@@ -89,7 +89,7 @@ const renderizarFooter = () => {
   $footer.innerHTML = "";
   if (Object.keys(carritoDeCompra).length === 0) {
     $footer.innerHTML = `
-            <th scope="row" colspan="5">Comprate alguna Yerbita...</th>
+            <th scope="row" colspan="5">Customizate...</th>
             `;
     return;
   }
@@ -134,21 +134,14 @@ $items.addEventListener("click", (e) => {
 });
 
 const btnAumentarOdisminuir = (e) => {
-  if (e.target.classList.contains("btn-carrito-agregar")) {
-    const articulo = carritoDeCompra[e.target.dataset.id];
-    articulo.cantidad++;
-
-    renderizarCarrito();
-  }
+  const articulo = carritoDeCompra[e.target.dataset.id];
+  if (e.target.classList.contains("btn-carrito-agregar")) articulo.cantidad++; //como quedo una sola linea, podemos omitir las llaves
   if (e.target.classList.contains("btn-carrito-eliminar")) {
-    const articulo = carritoDeCompra[e.target.dataset.id];
     articulo.cantidad--;
-    if (articulo.cantidad === 0) {
-      delete carritoDeCompra[e.target.dataset.id];
-    }
-    p;
-    renderizarCarrito();
+    !articulo.cantidad && delete carritoDeCompra[e.target.dataset.id];
+  $carritoContador.textContent = ``;
   }
+  renderizarCarrito();
   e.stopPropagation();
 };
 

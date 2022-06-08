@@ -39,11 +39,6 @@ html {
   font-size: 3rem;
 }
 
-.logo i {
-  padding-right: 0.5rem;
-  color: var(--green);
-}
-
 .header__buscador {
   display: flex;
   height: 5rem;
