@@ -1,3 +1,15 @@
+//WINDOW ONSCROLL- PARA HEADER FIJO.
+const $header = document.querySelector(".header__nav");
+
+window.onscroll = () => {
+  if (window.scrollY > 100) {
+    $header.classList.add("active");
+  } else {
+    $header.classList.remove("active");
+  }
+};
+
+//Main Js
 const $contenedorProductos = document.querySelector(".productos-contenedor");
 const $fragment = document.createDocumentFragment();
 const $template = document.querySelector(".template-productos").content;
@@ -14,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   llamarProductos();
 });
 
+//Fetch
 const llamarProductos = () => {
   fetch("./productos.json")
     .then((res) => res.json())
@@ -135,7 +148,7 @@ $items.addEventListener("click", (e) => {
 
 const btnAumentarOdisminuir = (e) => {
   const articulo = carritoDeCompra[e.target.dataset.id];
-  if (e.target.classList.contains("btn-carrito-agregar")) articulo.cantidad++; //como quedo una sola linea, podemos omitir las llaves
+  if (e.target.classList.contains("btn-carrito-agregar")) articulo.cantidad++;
   if (e.target.classList.contains("btn-carrito-eliminar")) {
     articulo.cantidad--;
     !articulo.cantidad && delete carritoDeCompra[e.target.dataset.id];
@@ -152,14 +165,3 @@ $buscador.addEventListener("keyup", (e) => {
       : el.classList.add("filter");
   });
 });
-
-//WINDOW ONSCROLL- PARA HEADER FIJO.
-const $header = document.querySelector(".header__nav");
-
-window.onscroll = () => {
-  if (window.scrollY > 100) {
-    $header.classList.add("active");
-  } else {
-    $header.classList.remove("active");
-  }
-};
