@@ -123,8 +123,7 @@ const renderizarFooter = () => {
   $fragment.appendChild(clon);
   $footer.appendChild($fragment);
 
-  const $btnVaciarCarrito = (document.querySelector("#vaciar-carrito").onclick =
-    vaciarCarrito);
+  document.querySelector("#vaciar-carrito").onclick = vaciarCarrito;
 
   const $btnComprar = document.querySelector(".realizar");
   $btnComprar.addEventListener("click", (e) => {
