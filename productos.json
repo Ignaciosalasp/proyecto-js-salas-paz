@@ -1,38 +1,38 @@
 [
     {
       "id": 1,
-      "img": "assets/img/galeria-1.jpg",
-      "nombre": "Pack de 50 calcos",
-      "precio": 1000
+      "img": "assets/img/id.png",
+      "nombre": "ID Mascotas",
+      "precio": 299
     },
     {
       "id": 2,
-      "img": "assets/img/galeria10.jpg",
-      "nombre": "Props",
-      "precio": 500
+      "img": "assets/img/props.png",
+      "nombre": "Props (10 unidades)",
+      "precio": 599
     },
     {
       "id": 3,
-      "img": "assets/img/galeria-8.jpg",
-      "nombre": "Pack de 100 calcos",
-      "precio": 1800
+      "img": "assets/img/cartel.png",
+      "nombre": "Cartel de recibida",
+      "precio": 1999
     },
     {
       "id": 4,
-      "img": "assets/img/foto-2.jpg",
-      "nombre": "Cartel de Graduación",
-      "precio": 1500
+      "img": "assets/img/polaroid.png",
+      "nombre": "60 Polaroids",
+      "precio": 999
     },
     {
       "id": 5,
-      "img": "assets/img/galeria-7.jpg",
-      "nombre": "Lona de Graduacion",
-      "precio": 1700
+      "img": "assets/img/cuadro.png",
+      "nombre": "Cuadro personalizado 1x0.7m",
+      "precio": 4999
     },
     {
       "id": 6,
-      "img": "assets/img/galeria-15.jpg",
-      "nombre": "ID Mascotas",
-      "precio": 300
+      "img": "assets/img/calcos.png",
+      "nombre": "Pack de 100 calcos",
+      "precio": 999
     }
   ]
